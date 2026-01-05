@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Simon Says</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        canvas {
+            border: 2px solid #fff;
+            background-color: #000;
+        }
+        #ui {
+            position: absolute;
+            top: 20px;
+            text-align: center;
+            width: 100%;
+            pointer-events: none;
+        }
+        h1 { margin: 0; font-size: 24px; }
+        #rule { font-size: 32px; color: yellow; margin-top: 10px; font-weight: bold; }
+        #score { position: absolute; top: 20px; right: 20px; font-size: 24px; }
+    </style>
+</head>
+<body>
+    <div id="ui">
+        <h1 id="rule">Loading...</h1>
+    </div>
+    <div id="score">Score: 0</div>
+    <canvas id="gameCanvas"></canvas>
+    <script src="audio.js"></script>
+    <script src="mygame.js"></script>
+</body>
+</html>
